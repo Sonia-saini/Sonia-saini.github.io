@@ -17,17 +17,17 @@ const Projects = () => {
     {
       title: "Zara-Website",
       link: "https://kunalchandel4.github.io/teamDeskChampions/",
-      url: "https://github.com/chhavi48/Bella-Vita-Organic",
+      url: "https://github.com/kunalchandel4/teamDeskChampions",
       description:
         "The company specializes in fast fashion, and products include clothing, accessories, shoes, swimwear, beauty, and perfumes. It is the largest company in the Inditex group, the world's largest apparel retailer. Zara is one of the most successful fashion retail brands in the world.",
       language:["html"," ","Css"," ","JavaScript"," "," "],
-      image:{Images}
+      image:"https://kunalchandel4.github.io/Images/Zara.png"
 
       
         
     },
     {
-      title: "Small-case-website",
+      title: "Youtube-website",
       link: "https://hilarious-baklava-9743c9.netlify.app/",
       url: "https://github.com/chhavi48/smallCase-clone",
       description:
