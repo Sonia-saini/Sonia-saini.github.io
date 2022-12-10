@@ -19,32 +19,21 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import Contact from './Contact';
+import NavLink  from './Navlink';
 
-const Links = [<a href='/' style={{color:"white",_hover:{ bg:"blue"
-}}}>HOME</a>, <a href='/projects' style={{color:"white"}}>PROJECT</a>, <a href='/about' style={{color:"white"}}>ABOUT ME</a>, <a href='/skills' style={{color:"white"}}>SKILL</a>,<a href='/contact' style={{color:"white"}}>CONTACT</a>];
+const Links = [{name:"HOME",id:"home"}, {id:'projects',name:"PROJECT"}, {id:'about',name:"ABOUT ME"}, {id:'skills' ,name:"SKILL"},{id:'contact',name:"CONTACT"},{id:"resume",name:"RESUME"}];
 
 
 
-const NavLink = ({ children }) => (
-  <Text
-    px={2}
-    py={1}
-    rounded={'md'}
-    _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
-    }}
-    href={'#'}>
-    {children}
-  </Text>
-);
+
+
 
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <>
-     <Box position={'fixed'} w={'100%'} zIndex={999} bg={useColorModeValue('gray.100', 'gray.900')} px={4} bgColor={"#12005e"}>
+     <Box position={'fixed'} w={'100%'} zIndex={999} bg={useColorModeValue('blue.200', 'blue.900')} px={4} >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -54,13 +43,15 @@ export default function Simple() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box></Box>
+            <Box color={useColorModeValue('blue.600', 'blue.200')} fontFamily={"fantasy"}>SSAINI</Box>
             <HStack
               as={'nav'}
               spacing={4}
-              display={{ base: 'none', md: 'flex' }}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+              display={{ base: 'none', md: 'flex' }}
+              >
+               {Links.map((link,i) => (
+                <NavLink name={link.name} key={i} to={link.id} onClick={()=>onClose()}/>
+
               ))}
             </HStack>
           </HStack>
@@ -79,8 +70,8 @@ export default function Simple() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+            {Links.map((link,i) => (
+                <NavLink name={link.name} key={i} to={link.id} onClick={()=>onClose()}/>
               ))}
             </Stack>
           </Box>

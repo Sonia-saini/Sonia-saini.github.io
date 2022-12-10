@@ -3,7 +3,7 @@ import GitHubCalendar from "react-github-calendar"
 import { Box, Heading } from '@chakra-ui/react'
 const Github = () => {
   return (
-    <Box mt={'5rem'}>
+    <Box mt={'5rem'} >
           <Heading color={'blue.500'}>Github-Stats</Heading>
           <Box px={['2%','4%','8%','16%','24%']} py={8}>
    <GitHubCalendar
