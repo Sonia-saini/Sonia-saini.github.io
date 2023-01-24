@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.9b61e993.js",
+    "main.js": "/static/js/main.d289034b.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/Sonia_Saini_Resume.pdf": "/static/media/Sonia_Saini_Resume.af20c936191442fda450.pdf",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.9b61e993.js.map": "/static/js/main.9b61e993.js.map",
+    "main.d289034b.js.map": "/static/js/main.d289034b.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.9b61e993.js"
+    "static/js/main.d289034b.js"
   ]
 }
